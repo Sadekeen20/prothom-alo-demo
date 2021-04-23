@@ -9,13 +9,14 @@ const Posts = (props) => {
 
     return (
 
-
-        <Col md={4} className="borderTop " style={{ marginTop: '30px', maxWidth: '100%', paddingTop: '20px'}}>
-            <div className="container borderRight" style={{margin:'5px'}}>
-                <h6 className="font-weight-bold">{title}</h6>
-                <p className="text-muted small"> {description.slice(0, 120) + '...'}</p>
-                <h6 className="small">{moment(date, "YYYY-MM-DD").fromNow()}</h6>
-            </div>
+        <Col md={4} className="borderTop " style={{ marginTop: '30px', maxWidth: '100%', paddingTop: '20px' }}>
+            <a href="#" className="text-dark" style={{ textDecoration: 'none' }}>
+                <div className="container borderRight" style={{ margin: '5px' }}>
+                    <h6 className="font-weight-bold">{title}</h6>
+                    <p className="text-muted small"> {description.slice(0, 120) + '...'}</p>
+                    <h6 className="small">{moment(date, "YYYY-MM-DD").fromNow()}</h6>
+                </div>
+            </a>
         </Col>
 
     );

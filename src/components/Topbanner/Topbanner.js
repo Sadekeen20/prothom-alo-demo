@@ -10,20 +10,22 @@ const Topbanner = (props) => {
 
         <Col md={8} className="borderTop mt-30 pt-20">
 
-            <div className="container row borderRight" style={{margin:'4px'}}>
-               
-                <div className="col-md-6">
-                    <h4 className="font-weight-bold">{title}</h4>
-                    <p className="font-weight-light">{description.slice(0,115)+'...'}</p>
-                    <h6 className="small">{moment(date, "YYYY-MM-DD").fromNow()}</h6>
-                </div>
-                
-                <div className="col-md-6">
-                    <img src={photo} className="img-fix"></img>
-                    <h6 className="small">{title}</h6>
+            <a href="#" className="text-dark" style={{ textDecoration: 'none' }}>
+                <div className="container row borderRight" style={{ margin: '4px' }}>
 
+                    <div className="col-md-6">
+                        <h4 className="font-weight-bold">{title}</h4>
+                        <p className="font-weight-light text-dark">{description.slice(0, 115) + '...'}</p>
+                        <h6 className="small">{moment(date, "YYYY-MM-DD").fromNow()}</h6>
+                    </div>
+
+                    <div className="col-md-6">
+                        <img src={photo} className="img-fix"></img>
+                        <h6 className="small">{title}</h6>
+
+                    </div>
                 </div>
-            </div>
+            </a>
         </Col>
 
 

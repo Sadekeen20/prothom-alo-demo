@@ -1,7 +1,5 @@
 
 $bordercolor:lightgray;
-
-
 // .container {
 //   max-width: $grid__bp-md * 1px;
 //   margin: 0 auto;
@@ -46,5 +44,8 @@ $bordercolor:lightgray;
   .logo{
     height:65px;
     width:260px;
+  }
+  a{
+    text-decoration:none;
   }
 
