@@ -1,16 +1,16 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import moment from 'moment';
+import 'moment/locale/bn'
+
 const Topbanner = (props) => {
     const { id, title, description, photo, time, sort } = props.posts;
-    const styleContainer = { border: '1px solid steelblue', borderRadius: '15px', padding: '20px' }
     let date = moment(time).format('YYYY-MM-DD');
-
     return (
 
-        <Col md={8} style={{marginTop:'30px' ,borderTop: '1px solid lightgray', paddingTop: '20px',}}>
+        <Col md={8} className="borderTop mt-30 pt-20">
 
-            <div className="container row">
+            <div className="container row borderRight" style={{margin:'4px'}}>
                
                 <div className="col-md-6">
                     <h4 className="font-weight-bold">{title}</h4>
@@ -19,7 +19,7 @@ const Topbanner = (props) => {
                 </div>
                 
                 <div className="col-md-6">
-                    <img src={photo} style={{ width: '300px', height: '200px' }}></img>
+                    <img src={photo} className="img-fix"></img>
                     <h6 className="small">{title}</h6>
 
                 </div>
