@@ -8,10 +8,10 @@ const Home = () => {
     return (
 
 
-        <div className="container borderBottom">
-           <img src="https://assets.prothomalo.com/prothomalo/assets/palo-bangla-bb996cdb70d2e0ccec8c.svg" className="rounded mx-auto d-block mt-3 logo" alt=""/>
-            <div className="row">
-                
+        <div className="container ">
+            <img src="https://assets.prothomalo.com/prothomalo/assets/palo-bangla-bb996cdb70d2e0ccec8c.svg" className="rounded mx-auto d-block mt-3 logo" alt="" />
+            <div className="row borderBottom" >
+
                 <div className="col-md-9">
                     <div className="row">
 
@@ -36,6 +36,8 @@ const Home = () => {
                     }
                 </div>
             </div>
+
+            <footer className="text-center small">স্বত্ব © ২০২১ প্রথম আলো | সম্পাদক ও প্রকাশক: মতিউর রহমান</footer>
         </div>
 
     );
