@@ -9,7 +9,7 @@ const Posts = (props) => {
 
     return (
 
-        <Col md={4} className="borderTop " style={{ marginTop: '30px', maxWidth: '100%', paddingTop: '20px' }}>
+        <Col md={4} className="borderTop mt-30 pt-20 mw-100">
             <a href="#" className="text-dark" style={{ textDecoration: 'none' }}>
                 <div className="container borderRight" style={{ margin: '5px' }}>
                     <h6 className="font-weight-bold">{title}</h6>
